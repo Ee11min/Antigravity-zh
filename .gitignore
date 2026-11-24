@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 构建中间产物
+src/dict.json
+
+# 调试脚本产出
+*.png
+*.log
+*.tmp
+scratch/

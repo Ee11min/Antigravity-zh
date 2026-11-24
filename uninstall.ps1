@@ -1,7 +1,7 @@
 ﻿#requires -Version 5.1
 <#
 .SYNOPSIS
-    Antigravity 简体中文汉化层 —— 完全卸载
+    Antigravity 汉化层 —— 完全卸载
 .DESCRIPTION
     从 preload.js 中剥掉汉化注入器，并把 resources\app 目录还原成原始 app.asar。
 .PARAMETER AppDir

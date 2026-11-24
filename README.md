@@ -1,4 +1,4 @@
-# Antigravity 简体中文汉化
+# Antigravity 汉化
 
 给 [Google Antigravity](https://antigravity.google/) 桌面客户端加一层**运行时中文界面**。
 
@@ -31,8 +31,8 @@ Antigravity   工作区  视图  窗口  新对话  自动化  自定义  项目
 要求：Windows、PowerShell 5.1+、已安装 Antigravity。**不需要 Python，不需要 Node。**
 
 ```powershell
-git clone https://github.com/<you>/antigravity-zh.git
-cd antigravity-zh
+git clone https://github.com/<you>/Antigravity-zh.git
+cd Antigravity-zh
 powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
 

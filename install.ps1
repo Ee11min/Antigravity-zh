@@ -1,7 +1,7 @@
 ﻿#requires -Version 5.1
 <#
 .SYNOPSIS
-    Antigravity 简体中文汉化层 —— 安装 / 更新
+    Antigravity 汉化层 —— 安装 / 更新
 .DESCRIPTION
     把 resources\app.asar 解包成 resources\app 目录，并在主窗口 preload 末尾追加汉化注入器。
     全程只追加、不改业务代码，可用 uninstall.ps1 完整还原。

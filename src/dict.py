@@ -491,6 +491,101 @@ for k,v in {
 }.items(): add(k,v)
 
 
+# ---- 补丁包 11：已安装插件长描述（市场详情/已安装页正文） ----
+for k,v in {
+"CodeRabbit is the governance and control layer for agentic software development helping developers trust AI written code.":
+  "CodeRabbit 是面向 Agent 软件开发的治理与管控层，帮助开发者信任 AI 编写的代码。",
+"This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.":
+  "本插件为在 Google Cloud 上工作的数据工程师与数据库从业者提供一整套专用技能。它充当专家助手，让您在自己的编码 Agent 中用自然语言提示来设计复杂的数据流水线、用 dbt 转换数据、编写 Spark 与 BigQuery SQL 笔记本，并在 GCP 数据生态中编排端到端工作流。",
+"Use Datadog directly in Antigravity through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview.":
+  "通过预配置的 Datadog MCP 服务器，在 Antigravity 中直接使用 Datadog。用自然对话查询日志、指标、链路、仪表盘等。本插件处于预览阶段。",
+"Develop ideas with context and review documents with fresh eyes.":
+  "带着上下文打磨想法，用全新的视角审阅文档。",
+"Official plugin for Dart and Flutter that installs Flutter/Dart Skills, Rules, Custom Agents, and Dart MCP server for building natively compiled, visually stunning applications for mobile, web, desktop, and embedded devices from a single codebase":
+  "Dart 与 Flutter 官方插件，安装 Flutter/Dart 技能、规则、自定义 Agent 与 Dart MCP 服务器，用于从单一代码库为移动端、Web、桌面端与嵌入式设备构建原生编译、视觉出众的应用。",
+"Google Cloud guidance for coding agents: first-project onboarding, authentication and credential selection, and safety-critical validation for gcloud CLI commands. Includes the Google Developer Knowledge MCP server for grounded, up-to-date Google Cloud documentation.":
+  "面向编码 Agent 的 Google Cloud 指南：首个项目上手、认证与凭据选择，以及对 gcloud CLI 命令的安全关键校验。内含 Google Developer Knowledge MCP 服务器，提供有据可依、及时更新的 Google Cloud 文档。",
+"Search and retrieve official documentation across Google Cloud, Gemini, Android, Firebase, Flutter, and Web. Requires Google Cloud credentials (ADC) or an API key.":
+  "在 Google Cloud、Gemini、Android、Firebase、Flutter 与 Web 之间检索并获取官方文档。需要 Google Cloud 凭据（ADC）或 API 密钥。",
+"Integration skill and tools for Google Maps Platform APIs":
+  "面向 Google Maps Platform API 的集成技能与工具。",
+"Query Grafana Cloud metrics, logs, traces and profiles, manage dashboards, alerts and incidents, and ask Grafana Assistant through the hosted MCP server.":
+  "通过托管 MCP 服务器查询 Grafana Cloud 的指标、日志、链路与性能剖析，管理仪表盘、告警与事件，并可询问 Grafana 助手。",
+"Build and debug pipelines, manage deployments, investigate security findings, and operate Harness with connected tools and reusable workflow skills.":
+  "借助已连接的工具与可复用的工作流技能，构建与调试流水线、管理部署、排查安全问题并操作 Harness。",
+"Respond to and investigate incidents, manage on-call schedules and escalations, and write runbooks and skills. Bundles the official incident.io MCP server.":
+  "响应与调查事件、管理值班排班与升级流程，并编写运行手册与技能。内含官方 incident.io MCP 服务器。",
+"Keep your coding agent up to date with the latest web best practices.":
+  "让您的编码 Agent 始终掌握最新的 Web 最佳实践。",
+"Plan and track work in monday.com from Antigravity: create, update and assign items, write docs, and build forms that turn requests into items.":
+  "在 Antigravity 中进行 monday.com 的工作计划与跟踪：创建、更新并分配条目，编写文档，构建能把请求转成条目的表单。",
+"Official Antigravity plugin for MongoDB Atlas (hosted MCP Server + Skills). Connect to the MongoDB-hosted Atlas MCP server, explore data, manage collections, optimize queries, generate reliable code, implement best practices, develop advanced features, and more.":
+  "MongoDB Atlas 官方 Antigravity 插件（托管 MCP 服务器 + 技能）。连接到 MongoDB 托管的 Atlas MCP 服务器，探索数据、管理集合、优化查询、生成可靠代码、落实最佳实践、开发高级功能等。",
+"Agent skills for Neo4j graph database — write Cypher queries, design graph models, use drivers, run imports, build GraphRAG pipelines, run GDS algorithms, and manage Aura instances.":
+  "面向 Neo4j 图数据库的 Agent 技能——编写 Cypher 查询、设计图模型、使用驱动、执行导入、构建 GraphRAG 流水线、运行 GDS 算法并管理 Aura 实例。",
+"Create and send proposals, quotes, and contracts for e-signature. Track signing progress and identify documents that need follow-up.":
+  "创建并发送供电子签署的方案、报价与合同。跟踪签署进度，识别需要跟进的文档。",
+"Search the live web and fetch page content with Parallel's hosted MCP server. Free access with no Parallel account, API key, or Parallel CLI required.":
+  "使用 Parallel 的托管 MCP 服务器搜索实时网页并抓取页面内容。免费使用，无需 Parallel 账号、API 密钥或 Parallel CLI。",
+"Agent plugin for PingOne multi-tenant. Includes skills and a remote MCP server that lets AI agents configure and monitor your PingOne environments.":
+  "面向 PingOne 多租户的 Agent 插件。包含技能与远程 MCP 服务器，让 AI Agent 配置并监控您的 PingOne 环境。",
+"Equip Antigravity with specialized Postman skills for the complete API lifecycle. Discover, design, test, document, mock, monitor, and improve APIs through agent-friendly, filesystem-first workflows.":
+  "为 Antigravity 配备覆盖完整 API 生命周期的专用 Postman 技能。通过面向 Agent、以文件系统为先的工作流来发现、设计、测试、编写文档、模拟、监控并改进 API。",
+"Set up Qodo, explore code and repository history, review local changes, and resolve pull-request findings directly from Antigravity.":
+  "配置 Qodo，探索代码与仓库历史，审阅本地改动，并直接在 Antigravity 中解决合并请求里的问题。",
+"Set up Sentry monitoring, investigate production errors, and configure alerts and releases with expert skills and live context from your Sentry projects.":
+  "配置 Sentry 监控、调查生产环境错误，并借助专家技能与来自您 Sentry 项目的实时上下文配置告警与发布。",
+"SonarQube is the AI code quality and security verification platform used by millions of developers to catch bugs, vulnerabilities, and leaked secrets. This plugin enforces those standards in the agent coding loop: 7,500+ distinct issue types, secrets scanning, agentic analysis, and quality gates across 40+ languages.":
+  "SonarQube 是 AI 代码质量与安全验证平台，被数百万开发者用来捕获缺陷、漏洞与泄露的密钥。本插件在 Agent 编码循环中强制落实这些标准：7,500+ 种问题类型、密钥扫描、Agent 化分析，以及覆盖 40+ 种语言的质量门禁。",
+"Official Supabase plugin for Antigravity with Supabase skills and MCP access for project management, database work, auth, storage, and Postgres best practices.":
+  "Supabase 官方 Antigravity 插件，提供 Supabase 技能与 MCP 访问，覆盖项目管理、数据库操作、认证、存储与 Postgres 最佳实践。",
+"Official Trello plugin with the Trello MCP server and a skill for boards, lists, cards, checklists, Inbox, and Planner.":
+  "Trello 官方插件，含 Trello MCP 服务器，以及面向看板、列表、卡片、检查清单、收件箱与 Planner 的技能。",
+"Build, publish, and manage WordPress.com and Jetpack-connected sites. Draft posts, edit blocks, check traffic stats, moderate comments, and manage plugins.":
+  "构建、发布并管理 WordPress.com 与已连接 Jetpack 的站点。起草文章、编辑区块、查看流量统计、审核评论并管理插件。",
+"Automate workflows across 10,000+ apps. Run one-off actions or build automations for YouTube, Instagram, Gmail, Facebook Pages, LinkedIn, Slack, Pinterest.":
+  "在 10,000+ 个应用之间自动化工作流。执行一次性动作，或为 YouTube、Instagram、Gmail、Facebook 主页、LinkedIn、Slack、Pinterest 构建自动化。",
+"Run Zoho Books from Antigravity: invoicing, bills, banking, journals, projects, items, taxes, customization and automation.":
+  "在 Antigravity 中运行 Zoho Books：开票、账单、银行业务、日记账、项目、条目、税费、自定义与自动化。",
+"Unlock the power of agent swarms.":
+  "释放 Agent 集群的力量。",
+}.items(): add(k,v)
+
+# ---- 补丁包 12：插件卡片操作菜单与状态词 ----
+for k,v in {
+"Enable":"启用",
+"Disable":"停用",
+"Enabled":"已启用",
+"Disabled":"已禁用",
+"Install":"安装",
+"Uninstall":"卸载",
+"Installing":"安装中…",
+"Needs setup":"需要配置",
+"MCP error":"MCP 错误",
+"Built-in":"内置",
+"Configure":"配置",
+}.items(): add(k,v)
+
+# ---- 补丁包 13：插件操作 aria-label 模式 ----
+
+# ---- 补丁包 14：技能与规则分组名 + 4 条内置技能长描述（已安装页残留英文） ----
+for k, v in {
+    'Skills & Rules': '技能与规则',
+    'No custom agents yet.': '尚无自定义 Agent。',
+    'How to manage and create plugins — namespaced bundles of skills, agents, rules, MCP servers and hooks that install, enable and disable as a single unit. Use this skill when the user wants to enable, disable, install or uninstall a plugin, when they want to create a new plugin, or when a new customization should be packaged into a plugin rather than left loose. Also triggered by the /plugin slash command. Don\'t use for the underlying customization system itself — discovery roots, loading priority, or authoring a standalone skill, agent, rule, hook or MCP server outside a plugin; see the customizations guide skill for those.':
+        '如何管理与创建插件——把技能、Agent、规则、MCP 服务器与钩子打包成可整体安装、启用、停用的命名空间套件。当用户想启用、停用、安装或卸载插件，想新建插件，或某项自定义应当打包成插件而非散放时使用本技能。斜杠命令 /plugin 也会触发。不适用于自定义系统本身——发现根、加载优先级，或在插件之外单独编写技能、Agent、规则、钩子、MCP 服务器；这些请见自定义指南技能。',
+    'How to write and run a dynamic workflow script with the `run_workflow` tool: a Python script that orchestrates many agents with `agent`, `parallel`, `pipeline`, and `phase`. Use when a task splits into many independent or staged pieces of agent work (fan out over files, modules, bugs, or review angles, then aggregate), or when the user asks for a workflow. Don\'t use for a single delegated task (use a subagent) or for legacy workflow files (see migrate-workflows).':
+        '如何用 `run_workflow` 工具编写并运行动态工作流脚本：Python 脚本，用 `agent`、`parallel`、`pipeline`、`phase` 编排大量 Agent。当任务可拆成许多独立或分阶段的 Agent 工作（按文件、模块、缺陷或评审角度并行展开再汇总），或用户要求工作流时使用。不适用于单个委派任务（请用子 Agent），也不适用于旧版工作流文件（见 migrate-workflows）。',
+    'Migrates the user\'s MCP servers, skills, slash commands, subagents, and instruction files from other coding agents (Claude Code, Codex, Cursor, Gemini CLI) into one new Antigravity plugin. Use when the user wants to bring over, import, or migrate their setup or config from another agent or tool. Don\'t use for installing Marketplace plugins or authoring a new plugin from scratch (use the plugin skill).':
+        '把用户的 MCP 服务器、技能、斜杠命令、子 Agent 与指令文件，从其他编码 Agent（Claude Code、Codex、Cursor、Gemini CLI）迁移到一个新的 Antigravity 插件中。当用户想从其他 Agent 或工具搬迁、导入、迁移其配置时使用。不适用于安装市场插件，也不适用于从零编写新插件（请用 plugin 技能）。',
+    'Provides a comprehensive guide, quick reference, and sitemap for Google Antigravity (AGY), including the Antigravity CLI (agy), Antigravity 2.0, Antigravity IDE, Python SDK, slash commands, keybindings, and customizations (skills, rules, MCP, sidecars). Activate this skill when the user asks questions about how to use, configure, or customize Antigravity, AGY, the agy CLI, the Antigravity IDE, or Antigravity 2.0.':
+        '为 Google Antigravity（AGY）提供完整指南、速查表与站点地图，覆盖 Antigravity CLI（agy）、Antigravity 2.0、Antigravity IDE、Python SDK、斜杠命令、快捷键以及自定义项（技能、规则、MCP、边车）。当用户询问如何使用、配置或自定义 Antigravity、AGY、agy CLI、Antigravity IDE 或 Antigravity 2.0 时激活本技能。',
+    'Antigravity 自定义系统的完整指南与参考。用于说明自定义项的工作方式、加载优先级、发现机制，并指导创建技能、规则、插件、钩子与 MCP 服务器。':
+        'Antigravity 自定义系统的完整指南与参考。用于说明自定义项的工作方式、加载优先级、发现机制，并指导创建技能、规则、插件、钩子与 MCP 服务器。',
+}.items():
+    add(k, v)
+
+
 _HERE = os.path.dirname(os.path.abspath(__file__))
 json.dump(DICT, open(os.path.join(_HERE, 'dict.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 print('DICT entries:', len(DICT))

@@ -145,6 +145,16 @@ doAttrs(el)        // 改写 placeholder / title / aria-label / alt
 
 ---
 
+## 更新记录
+
+### 插件与市场界面（词表 847 条 / 42 条句式）
+
+- 应用市场、已安装页、插件详情页的正文与长描述全部汉化（含 40+ 合作伙伴插件的两三百字说明）。
+- 插件状态词：`Needs setup` → 需要配置、`MCP error` → MCP 错误、`Built-in` → 内置、`Disabled` → 已禁用。
+- 插件卡片操作菜单：`Enable / Disable / Remove` → 启用 / 停用 / 移除；`More actions for X` → X 的更多操作。
+- 长文本上限从 400 字符放宽到 4000 字符（`doText` / `doAttrs` 各一处），否则两三百字的插件长描述永远翻不到。
+- 品牌名、插件标识符（`/swarm`、`/plugin` 等斜杠命令）、快捷键键位串按设计保留英文。
+
 ## 已知边界
 
 - **只影响主窗口。** 原生对话框、右键菜单走的是 Electron 的 `locales\zh-CN.pak`，那是另一套机制，本项目不碰（你要的话自己把 `locales` 里的 `zh-CN.pak` 重命名成 `en-US.pak` 即可，但会影响所有 Electron 应用的习惯，不建议）。
